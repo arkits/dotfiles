@@ -1,0 +1,82 @@
+theme:
+  background-color: 225 14 15
+  primary-color: 157 47 65
+  contrast-multiplier: 1.1
+
+pages:
+  - name: Home
+    columns:
+      - size: full
+        widgets:
+          - type: bookmarks
+            groups:
+              - title: General
+                links:
+                  - title: Gmail
+                    url: https://mail.google.com/mail/u/0/
+                  - title: Amazon
+                    url: https://www.amazon.com/
+                  - title: Github
+                    url: https://github.com/
+              - title: Social
+                links:
+                  - title: Reddit
+                    url: https://www.reddit.com/
+                  - title: Twitter
+                    url: https://twitter.com/
+                  - title: YouTube
+                    url: https://www.youtube.com/
+
+          - type: hacker-news
+
+          - type: videos
+            channels:
+              - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+
+      - size: full
+        widgets:
+          - type: rss
+            limit: 10
+            title: The Verge
+            collapse-after: 5
+            cache: 1h
+            feeds:
+              - url: https://www.theverge.com/rss/index.xml
+
+          - type: rss
+            limit: 10
+            title: Ars Techinca
+            collapse-after: 5
+            cache: 1h
+            feeds:
+              - url: http://feeds.arstechnica.com/arstechnica/index
+
+          - type: rss
+            limit: 10
+            title: Reddit
+            collapse-after: 5
+            cache: 1h
+            feeds:
+              - url: https://www.reddit.com/r/Android.rss
+
+      - size: small
+        widgets:
+          - type: iframe
+            source: https://newtab.archit.xyz/nowplaying.html
+            height: 400
+
+          - type: weather
+            location: Hayward, California, United States
+
+          - type: calendar
+
+          - type: markets
+            markets:
+              - symbol: SPY
+                name: S&P 500
+              - symbol: BTC-USD
+                name: Bitcoin
+              - symbol: VOO
+                name: VOO
+              - symbol: COF
+                name: COF
